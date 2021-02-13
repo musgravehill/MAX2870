@@ -11,7 +11,7 @@ reg.bits.n = n;
 reg.bits.m = m;
 reg.bits.diva = diva;
 
-SPI.transfer((0xFF000000 & data) >> 24);  //????  в таком порядке или обратном????
+SPI.transfer((0xFF000000 & data) >> 24);  
   SPI.transfer((0x00FF0000 & data) >> 16);
   SPI.transfer((0x0000FF00 & data) >> 8);
   SPI.transfer( 0x000000FF & data);

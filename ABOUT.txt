@@ -1,3 +1,43 @@
 MAX2870 pin to pin compatible ADF4351
 
 Регистры MAX2870 и MAX2871 почти совпадают. Кроме регистра 6, но там не критично. Из регистра 6 читают, а не пишут.
+
+Там обычный регистр для конфига. 3 бита на адрес, 5 бит на что-то, 23 бита на что-то другое. 
+Этот регистр можно залить по SPI 3-мя способами:  смотри код ADF4351, MAX2870
+
+=====================1. через union с удобством, но надо понимать union
+reg.bits.frac = frac;
+reg.bits.n = n;
+reg.bits.m = m;
+reg.bits.diva = diva;
+
+SPI.transfer((0xFF000000 & data) >> 24);  //????  в таком порядке или обратном????
+  SPI.transfer((0x00FF0000 & data) >> 16);
+  SPI.transfer((0x0000FF00 & data) >> 8);
+  SPI.transfer( 0x000000FF & data);
+
+======================2. через сдвиг VAS_DLY << 29 | SDPLL << 25 | F01 << 24 | LD << 22
+
+======================3. через pow() ADF4351_registers[5] = (unsigned long)(5 + 0 * pow(2, 3) + 3 * pow(2, 19) + 0 * pow(2, 21) + D_LdPinMod * pow(2, 22));
+   void ADF4351_writeToRegister(int idx)
+{ // make 4 byte from integer for SPI-Transfer
+  byte buf[4];
+  for (uint8_t i = 0; i < 4; i++)
+    buf[i] = (byte)(ADF4351_registers[idx] >> (i * 8));
+  ADF4351_writeData(buf[3], buf[2], buf[1], buf[0]);
+}
+void ADF4351_writeData(byte a1, byte a2, byte a3, byte a4) {
+  // write over SPI to ADF4351
+  digitalWrite(ADF4351_LE_pin, LOW);
+  delayMicroseconds(10);
+  SPI.transfer(a1);
+  SPI.transfer(a2);
+  SPI.transfer(a3);
+  SPI.transfer(a4);
+  ADF4351_ss_toggle();
+}
+void ADF4351_ss_toggle() {
+  digitalWrite(ADF4351_LE_pin, HIGH);
+  delayMicroseconds(5);
+  digitalWrite(ADF4351_LE_pin, LOW);
+}

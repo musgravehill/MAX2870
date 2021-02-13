@@ -1,0 +1,96 @@
+/* colour v1.1 for tables
+   21. August 2010
+	  
+*/
+
+
+.oben
+
+{
+color: #000000;
+background: #DDDDDD;
+
+}
+
+.mitte
+
+{
+color: #000000;
+background: #EEEEEE;
+
+}
+
+.titel
+
+{
+color: #000000;
+background: #CCCCCC;
+
+}
+
+.royal
+
+{
+background-image: url(https://www.changpuak.ch/aglobe/qs_bg.jpg);
+background-repeat: repeat;
+clear: both;
+-webkit-border-radius: 12px;
+-moz-border-radius: 12px;
+border-radius: 12px;
+}
+
+.grey
+
+{
+background-image: url(https://www.changpuak.ch/aglobe/qt_bg.jpg);
+background-repeat: repeat;
+clear: both;
+-webkit-border-radius: 12px;
+-moz-border-radius: 12px;
+border-radius: 12px;
+}
+
+
+input[readonly], input[readonly="readonly"] 
+
+{
+    background-color: #eee;
+    border: #ddd 1px solid;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;    
+	padding: 2px;
+    text-align: center;
+}
+
+form input[type="text"]
+{
+    border: #ddd 1px solid;
+    /* background-color: #ffffff; */
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;    
+	padding: 2px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+select 
+{
+    border: #dddddd 1px solid;
+    /* background-color: #ffffff; */
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;	padding: 2px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+
+
+
+
+

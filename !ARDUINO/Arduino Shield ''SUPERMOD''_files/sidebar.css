@@ -1,0 +1,62 @@
+/* http://www.devinrolsen.com/pure-css-menu-with-infinite-sub-menus-tutorial/ */
+
+/* body{behavior:url(https://www.changpuak.ch/electronics/cssHoverFix.htc);} // IE6 only */
+
+#navigation {width:202px; font-size:12px;}
+
+/*Main Menu*/
+#navigation ul {margin:0px; padding:0px;}
+
+#navigation ul li {
+border: 1px solid transparent;
+border-radius: 5px;
+height:25px;
+line-height:25px; 
+list-style:none; 
+padding-left:10px;
+cursor:pointer; 
+z-index: 90000001;
+
+}
+
+#navigation ul li a {color:#000;} /*Link's Styles*/
+
+#navigation ul li:hover {background-color:#AAA; position:relative; border: 1px solid #FFFFFF; border-radius: 5px;}
+
+/*Sub Menu*/
+#navigation ul ul {display:none; position:absolute; left:75px; top:5px; border:#fff solid; border-width:3px; border-radius:8px;background-color:#BBB;  padding: 4px;}
+#navigation ul li:hover ul {display:block; background-color:#CCC;}
+
+#navigation ul ul li { width:400px; float:left; display:inline; border:none;}
+#navigation ul ul li:hover {text-decoration:none; border:none;}
+
+#navigation li:hover ul li ul {display:none;}
+
+#navigation ul ul li ul {left:110px; background-color:#888;}
+#navigation ul ul li:hover ul {display:block;}
+
+
+ul.top-level { background: transparent; }
+ul.top-level li { background: transparent; }
+
+ul.sub-level { display: none; }
+li:hover .sub-level {
+background: #999;
+border: #fff solid;
+border-width: 3px;
+display: block;
+position: absolute;
+left: 75px;
+top: 5px;
+}
+ul.sub-level li {
+border: none;
+float:left;
+width:150px; 
+}
+#navigation .sub-level { background: #CCC; }
+#navigation .sub-level .sub-level { background: #CCC; }
+
+/*IE RESET HELPER*/
+li:hover .sub-level .sub-level { display:none; }
+.sub-level li:hover .sub-level { display:block; }	

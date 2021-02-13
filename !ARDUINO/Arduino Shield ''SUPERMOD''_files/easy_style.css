@@ -1,0 +1,719 @@
+body {
+  text-align: center;
+  background-color: #666666;
+  background-image: url(img/background.jpg);
+  background-repeat: repeat;
+  background-attachment:fixed;
+  margin-top:20px;
+  margin-bottom:20px;
+  color:#000000;
+  font-family: Verdana, Geneva, Helvetica, "Arial Rounded MT", sans-serif;
+  font-size: 14px;
+  
+}
+
+::-moz-selection {
+	background:#FF3C00;
+	color:white;
+}
+
+::selection {
+	background:#FF3C00;
+	color:white;
+}
+
+hr {
+  border: 0;
+  width: 100%;
+  height: 1px;
+  color: #000000;
+  background-color: #000000;
+}
+
+u {
+    text-decoration: none;
+    border-bottom: 2px solid black;
+  }
+
+#page_wrapper {
+  margin-left: auto; 
+  margin-right: auto;
+  width: 1200px;
+  text-align: left;
+  background: #FFFFFF;
+  /* border: #333333 solid 5px; */
+  /* border: 20px solid #999999; */
+	border: 19px solid rgb(49,49,49);
+	border: 19px solid rgba(49,49,49, .5);
+	-webkit-background-clip: padding-box; /* for Safari */
+	background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+  
+  border-radius: 39px;
+  box-shadow: 0px 0px 25px #000;
+  -webkit-border-radius: 39px;
+  -moz-border-radius: 39px;
+  border-radius: 39px;
+  
+}
+
+#page_header {
+  height: 110px;
+  background: url(img/electronics2.jpg);
+  clear: both;
+  -webkit-border-top-left-radius: 20px;
+  -webkit-border-top-right-radius: 20px;
+  -moz-border-radius-topleft: 20px;
+  -moz-border-radius-topright: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+
+#page_header a{
+	color: #FFFF00;
+	text-decoration: none;
+	font-size: 40px;
+}
+
+/* oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo */
+/* http://zenverse.net/create-a-fancy-search-box-using-css/ */
+
+
+#cp-csebox {
+width:297px; /*follow your image's size*/
+height:40px;/*follow your image's size*/
+background-image:url(https://www.changpuak.ch/search/searchbox2.png);
+background-repeat:no-repeat; /*important*/
+padding:0px;
+margin:0px;
+position:relative; /*important*/
+border: #000000 solid 1px; 
+-webkit-border-radius: 6px; 
+-moz-border-radius: 6px; 
+border-radius: 6px; 
+}
+
+form#cp-cseform{display: inline; padding: 5px 12px; margin:0; font-weight:normal;}
+
+form#cp-cseform #s{
+position:absolute; /*important*/
+top:5px;
+left:5px;
+width:246px;
+height:30px;
+border:0px; /*important*/
+background-color:transparent; /*important*/
+font-weight: normal;
+}
+
+form#cp-cseform #sbutton{margin:0;padding:0;height:30px;width:30px;vertical-align: top;border:none;background:transparent;}
+
+
+/* oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo */
+
+.headbox{
+color:#fff;
+font-size: 13px;
+text-transform:uppercase;
+border-bottom:3px solid #FFFF00;
+padding:9px 10px;
+-webkit-border-top-left-radius: 8px;
+-webkit-border-top-right-radius: 8px;
+-moz-border-radius-topleft: 8px;
+-moz-border-radius-topright: 8px;
+border-top-left-radius: 8px;
+border-top-right-radius: 8px;
+background: #424242; /* For browsers that do not support gradients */
+background: -webkit-linear-gradient(#424242, #5B5B5B); /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient(#424242, #5B5B5B); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(#424242, #5B5B5B); /* For Firefox 3.6 to 15 */
+background: linear-gradient(#424242, #5B5B5B); /* Standard syntax (must be last) */
+}
+
+.contentbox {
+background: #CCCCCC; /* For browsers that do not support gradients */
+background: -webkit-linear-gradient(#CCCCCC, #888888); /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient(#CCCCCC, #888888); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(#CCCCCC, #888888); /* For Firefox 3.6 to 15 */
+background: linear-gradient(#CCCCCC, #888888); /* Standard syntax (must be last) */
+border-right: 1px solid #AAA; 
+border-bottom: 1px solid #AAA;
+border-left: 1px solid #AAA;
+padding:8px;
+-moz-border-radius-bottomright: 8px;
+border-bottom-right-radius: 8px;
+-moz-border-radius-bottomleft: 8px;
+border-bottom-left-radius: 8px;
+}
+
+.flagbox {
+background: #CCCCCC; /* For browsers that do not support gradients */
+border-right: 1px solid #AAA; 
+border-bottom: 1px solid #AAA;
+border-left: 1px solid #AAA;
+padding:8px;
+-moz-border-radius-bottomright: 8px;
+border-bottom-right-radius: 8px;
+-moz-border-radius-bottomleft: 8px;
+border-bottom-left-radius: 8px;
+}
+
+.kingbox {
+
+border:0px; 
+padding:0px;
+-moz-border-radius-bottomright: 8px;
+border-bottom-right-radius: 8px;
+-moz-border-radius-bottomleft: 8px;
+border-bottom-left-radius: 8px;
+}
+
+.kingbox img{
+
+padding:0px; 
+border: 0px; 
+-moz-border-radius-bottomright: 8px;
+border-bottom-right-radius: 8px;
+-moz-border-radius-bottomleft: 8px;
+border-bottom-left-radius: 8px;
+}
+
+.gloggbox {
+
+width: 201px;
+height: 201px;
+background-color: #CCC;
+border:1px solid #AAA; 
+padding:8px;
+-webkit-border-radius: 8px;
+-moz-border-radius: 8px;
+border-radius: 8px;
+}
+
+
+.infobox {
+
+background: #CCCCCC; /* For browsers that do not support gradients */
+background: -webkit-linear-gradient(#CCCCCC, #888888); /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient(#CCCCCC, #888888); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(#CCCCCC, #888888); /* For Firefox 3.6 to 15 */
+background: linear-gradient(#CCCCCC, #888888); /* Standard syntax (must be last) */
+border:1px solid #AAA; 
+padding:8px;
+-moz-border-radius: 8px;
+border-radius: 8px;
+}
+
+.karobox {
+
+background-image: url(images/Loga1.gif);
+background-repeat: repeat;
+border:1px solid #AAA; 
+padding:8px;
+border-radius: 8px;
+-webkit-border-radius: 8px;
+-moz-border-radius: 8px;
+}
+
+.lightbox {
+
+background-color: #CECEF6; 
+border:1px solid #AAA; 
+padding:8px;
+border-radius: 8px;
+-webkit-border-radius: 8px;
+-moz-border-radius: 8px;
+}
+
+.darkbox {
+
+background-color: #000000; 
+border:1px solid #AAA; 
+padding:8px;
+border-radius: 8px;
+-webkit-border-radius: 8px;
+-moz-border-radius: 8px;
+}
+
+.blubox {
+
+border-style: solid; 
+border-width: 39px 32px 10px 10px; 
+
+-moz-border-image: url(freezeframe2.png) 39 32 10 10 stretch round; 
+-webkit-border-image: url(freezeframe2.png) 39 32 10 10 stretch round; 
+-o-border-image: url(freezeframe2.png) 39 32 10 10 stretch round; 
+border-image: url(freezeframe2.png) 39 32 10 10 stretch round;
+
+background-color: #FFFFFF;
+padding:12px;
+}
+
+.greybox {
+
+border-style: solid; 
+border-width: 39px 32px 10px 10px; 
+
+-moz-border-image: url(greyzeframe2.png) 39 32 10 10 stretch round; 
+-webkit-border-image: url(greyzeframe2.png) 39 32 10 10 stretch round; 
+-o-border-image: url(greyzeframe2.png) 39 32 10 10 stretch round; 
+border-image: url(greyzeframe2.png) 39 32 10 10 stretch round;
+
+background-color: #FFFFFF;
+padding:12px;
+}
+
+.oranginabox {
+border-style: solid; 
+border-width: 39px 32px 10px 10px; 
+-moz-border-image: url(orangina2.png) 39 32 10 10 stretch round; 
+-webkit-border-image: url(orangina2.png) 39 32 10 10 stretch round; 
+-o-border-image: url(orangina2.png) 39 32 10 10 stretch round; 
+border-image: url(orangina2.png) 39 32 10 10 stretch round;
+background-color: #FFFFFF;
+padding:12px;
+}
+
+.box {
+position: relative;
+margin: 0 0 9px 0;
+background: #fff;
+border: solid 1px #949599;
+-moz-border-radius: 7px;
+-webkit-border-radius: 7px;
+border-radius: 7px;
+}
+
+.digibox {
+position: relative;
+color: #666;
+padding: 20px;
+height: auto;
+background: #FAC75C; /* For browsers that do not support gradients */
+background: -webkit-linear-gradient(#FAC75C, #DCA81E); /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient(#FAC75C, #DCA81E); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(#FAC75C, #DCA81E); /* For Firefox 3.6 to 15 */
+background: linear-gradient(#FAC75C, #DCA81E); /* Standard syntax (must be last) */
+border: solid 1px #666;
+-moz-border-radius: 8px;
+-webkit-border-radius: 8px;
+border-radius: 8px;
+}
+
+.box h2 {
+position: relative;
+width: 179px;
+margin: -1px 0 14px -1px;
+background: #bbbdbf no-repeat;
+border-left: solid 1px #949599;
+border-top: solid 1px #949599;
+-moz-border-radius: 7px 0 7px 0;
+-webkit-border-radius: 7px 0 7px 0;
+border-radius: 7px 0 7px 0;
+color: #fff;
+text-align: center;
+text-shadow: 0 1px 2px rgba(0, 0, 0, .27);
+height: 22px;
+padding: 7px 0 0 0;
+font-weight: bold;
+text-transform: uppercase;
+}
+
+.DuSchlauch {
+border-style: solid; 
+border-width: 37px 10px 10px 10px; 
+-moz-border-image: url(DuSchlauch.png) 37 10 10 10 stretch round; 
+-webkit-border-image: url(DuSchlauch.png) 37 10 10 10 stretch round; 
+-o-border-image: url(DuSchlauch.png) 37 10 10 10 stretch round; 
+border-image: url(DuSchlauch.png) 37 10 10 10 stretch round;
+background-color: #000000;
+padding:0px;
+}
+
+.DuKleinSchlauch {
+background-color: #000;
+border:1px solid #CACACA; 
+padding:8px;
+-moz-border-radius-bottomright: 8px;
+border-bottom-right-radius: 8px;
+-moz-border-radius-bottomleft: 8px;
+border-bottom-left-radius: 8px;
+-moz-border-radius-topright: 8px;
+border-top-right-radius: 8px;
+-moz-border-radius-topleft: 8px;
+border-top-left-radius: 8px;
+}
+
+.downloads img {
+border: 3px solid #0000FF;  
+margin: 5px 5px 0 0;
+/* radius was 37 for a circle */
+-webkit-border-radius: 7px;
+-moz-border-radius: 7px;
+border-radius: 7px;
+width: 69px;
+height: 69px;
+}
+
+.blackbox {
+background-image: linear-gradient(#000, #999);
+border:1px solid #898989; 
+padding:9px;
+color:#FFF;
+font-weight: bold;
+text-align: center;
+-moz-border-radius: 8px;
+-webkit-border-radius: 8px;
+border-radius: 8px;
+}
+
+/* oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo */
+/* SOURCE : http://css3buttongenerator.com/ */
+
+.raterbtn {
+  font-family: Verdana, Geneva, Helvetica, "Arial Rounded MT", sans-serif; 
+  font-size: 13px;
+  padding: 4px 10px 4px 10px;
+  text-decoration: none;}
+
+.ratebtn {
+  -webkit-border-radius: 6;
+  -moz-border-radius: 6;
+  border-radius: 6px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 13px;
+  background: #666666;
+  padding: 5px 10px 5px 10px;
+  border: solid #efefef 1px;
+  text-decoration: none;
+}
+
+.ratebtn:hover {
+  background: #333333;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo */
+form { margin: 0; padding: 0;}
+
+#menu_bar {
+  margin:0px;
+  padding:0px;
+  height:35px;
+  clear:both;
+}
+
+#content_wrapper {
+  margin-top:8px;
+  margin-bottom:10px;
+  margin-left:10px;
+  margin-right:10px;      
+  border:0px dashed #FFFFFF; 
+  background-image: url(https://www.changpuak.ch/ico/massband-102.png);
+  background-repeat:repeat-y;
+  background-size:80px auto;
+
+}
+
+#center {
+  margin-left:250px;
+  margin-right:250px;
+  min-height: 580px;
+}
+
+#center h1 {
+  margin:0px;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 24px;
+  color: #222222;
+  font-family: Verdana, Geneva, Helvetica, "Arial Rounded MT", sans-serif; 
+}
+
+.just {
+
+text-align: justify;
+font-size: 13px;
+font-weight: normal;
+line-height: 24px;
+color: #222222;
+font-family: Verdana, Geneva, Helvetica, "Arial Rounded MT", sans-serif; 
+}
+
+.mainpic img{
+
+width: 100%;
+height: auto;
+padding:0px; 
+border: solid 0px #666;
+-moz-border-radius: 8px;
+-webkit-border-radius: 8px;
+border-radius: 8px;
+}
+
+.pic img{
+
+padding:0px; 
+border: 0px; 
+
+-webkit-border-radius: 19px;
+-moz-border-radius: 19px;
+border-radius: 19px;
+
+}
+
+.piclek img{
+padding:0px; 
+border: 0px; 
+-webkit-border-radius: 8px;
+-moz-border-radius: 8px;
+border-radius: 8px;
+}
+
+figcaption { 
+display: block;
+background: #53768B; /* For browsers that do not support gradients */
+background-image: linear-gradient(#7B9BB0, #53768B);  
+color: #FFF;
+border: 0px solid #021826;
+-webkit-border-radius: 8px;
+-moz-border-radius: 8px;
+border-radius: 8px;
+}
+
+figure {
+display: inline-block;
+margin: 0px; /* adjust as needed */
+background-color: #FFF;
+border: 0px;
+-webkit-border-radius: 8px;
+-moz-border-radius: 8px;
+border-radius: 8px;
+}
+
+.lek figure:nth-of-type(even) { margin-left: 8px; }
+
+figure img {
+vertical-align: top;
+border: 2px solid #7B9BB0;
+-webkit-border-radius: 8px;
+-moz-border-radius: 8px;
+border-radius: 8px;
+}
+
+figure figcaption {
+margin-top: 4px;
+padding: 10px;
+border: 0px;
+text-align: justify;
+font-size: 13px;
+font-family:Comic Sans MS,Verdana,Helvetica;
+}
+
+
+
+#center h2 {
+  margin:0px;
+  font-size: 18px;
+  line-height: 180%;
+  color: #0000ff;
+  text-decoration: none;
+}
+
+#center h3 {
+  margin:0;
+  font-size: 22px;
+  line-height: 180%;
+  color: #0000ff;
+  font-weight: bold;
+}
+
+#center h1 a 
+{
+  color: #0000ff;
+  text-decoration: underline;
+}
+
+#center a:visited
+{
+  color: #0000ff;
+  text-decoration: underline;
+}
+
+
+#path {
+	font-size: 10px;
+	text-transform: uppercase;
+}
+
+#path a{
+	text-decoration: none;
+	color: #000000;
+}
+
+#path a:hover {
+	text-decoration: underline;
+	color: #000000;
+}
+
+#left_side {
+  float: left;
+  width:220px;
+}
+
+#left_side a{
+  text-decoration: none;
+  color: #000000;
+}
+
+
+
+#right_side {
+  float: right;
+  width:220px;
+}
+
+#right_side a{
+  text-decoration: none;
+  color: #0000FF;
+}
+
+#right_side a:hover{
+	font-weight: bold;
+}
+
+#boots {
+  height: 110px;
+  text-align: center;
+  background: #181818;
+  border-top: #000000 solid 17px;
+  background: url(https://www.changpuak.ch/aglobe/black_boots.png);
+  background-repeat: repeat-x;
+  clear: both;
+  font-size: 14px;
+  -webkit-border-bottom-right-radius: 20px;
+  -webkit-border-bottom-left-radius: 20px;
+  -moz-border-radius-bottomright: 20px;
+  -moz-border-radius-bottomleft: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+#boots a:visited { color: #46ADFC; }
+#boots a { color: #46ADFC; }
+
+
+/*Credits: */
+/*URL: http://cssmenumaker.com/css-horizontal-menus */
+
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+@charset "UTF-8";
+/* Base Styles */
+#cssmenu ul,
+#cssmenu li,
+#cssmenu a {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  line-height: 1;
+  font-family: 'Lato', sans-serif;
+}
+#cssmenu {
+  width: auto;
+}
+#cssmenu ul {
+  zoom: 1;
+  background: #686868;
+  background: -moz-linear-gradient(top, #686868 0%, #151515 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #686868), color-stop(100%, #151515));
+  background: -webkit-linear-gradient(top, #686868 0%, #151515 100%);
+  background: -o-linear-gradient(top, #686868 0%, #151515 100%);
+  background: -ms-linear-gradient(top, #686868 0%, #151515 100%);
+  background: linear-gradient(top, #686868 0%, #151515 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@top-color', endColorstr='@bottom-color', GradientType=0);
+  padding: 1px 10px 3px 10px;
+}
+#cssmenu ul:before {
+  content: '';
+  display: block;
+}
+#cssmenu ul:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+#cssmenu li {
+  float: left;
+  margin: 0 5px 0 0;
+  border: 1px solid transparent;
+}
+#cssmenu li a {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  padding: 8px 15px 9px 15px;
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+  border: 1px solid transparent;
+  font-size: 16px;
+}
+#cssmenu li.active {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #686868;
+}
+#cssmenu li.active a {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  display: block;
+  background: #1237eb;
+  border: 1px solid #212d75;
+  -moz-box-shadow: inset 0 5px 10px #212d75;
+  -webkit-box-shadow: inset 0 5px 10px #212d75;
+  box-shadow: inset 0 5px 10px #212d75;
+}
+#cssmenu li:hover {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #686868;
+}
+#cssmenu li:hover a {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  display: block;
+  background: #1237eb;
+  border: 1px solid #212d75;
+  -moz-box-shadow: inset 0 5px 10px #212d75;
+  -webkit-box-shadow: inset 0 5px 10px #212d75;
+  box-shadow: inset 0 5px 10px #212d75;
+}
+
+.social_butt a {
+	display:inline-block;
+	line-height:32px;
+	padding:0 12px;
+	color:#2e2d2c;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+	border:1px solid #d7d4d3;
+	margin:8px 8px 8px 0;
+	font-size:12px
+	}

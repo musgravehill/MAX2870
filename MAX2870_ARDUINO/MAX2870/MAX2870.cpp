@@ -105,6 +105,11 @@ void MAX2870::set_RF_OUT_A(double freq) {
 }
 
 void MAX2870::setPFD(const double ref_in, const uint16_t rdiv) {
+  // fPFD = fREF * [(1 + DBR)/(R * (1 + RDIV2))]  
+  // DBR=0 RDIV2=0
+  // fPFD = fREF * [1/R] = fREF / R
+  //
+  
   f_pfd = ref_in / rdiv;
 
   if (f_pfd > 32.0) {
